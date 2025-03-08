@@ -1,11 +1,13 @@
 import './App.css'
-import Navbar from "./Components/Navbar"
+import Aboutus from "./Pages/Aboutus"
+
+
+
 function App() {
   
   return (
-<div className="text-blue-300">
-  <Navbar/>
-  owais khilji
+<div className="mt-10">
+<Aboutus/>
 </div>
   )
 }

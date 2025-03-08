@@ -55,7 +55,7 @@ export default function Navbar() {
 
             </ul>
           </div>
-          <a className=" text-xl sm:text-2xl md:text-3xl lg:text-4xl">Perth Retreat</a>
+          <a className="text-textcolor font-semibold text-xl sm:text-2xl md:text-3xl lg:text-4xl">Perth Retreat</a>
         </div>
         <div className="navbar-center hidden lg:flex ">
           <ul className="menu menu-horizontal px-1 lg:gap-x-8">
