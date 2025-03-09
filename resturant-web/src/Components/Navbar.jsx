@@ -34,7 +34,7 @@ export default function Navbar() {
             <li>
               <Link
               onClick={() => document.activeElement.blur()}
-              >Timing</Link>
+              >Prices</Link>
             </li>
             
             <li>
@@ -71,7 +71,7 @@ export default function Navbar() {
             <li>
               <Link
               className="lg:text-xl font-semibold hover:text-textcolor hover:underline"
-              >Timing</Link>
+              >Prices</Link>
             </li>          
             
             <li>

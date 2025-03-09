@@ -13,7 +13,7 @@ export default function Ourstory(){
     
     <div>
       <h1 className="text-3xl sm:text-3xl md:text-5xl lg:text-5xl font-bold font-merriweather">Our Story</h1>
-      <p className="py-6 font-playfair text-md sm:text-xl md:text-xl lg:text-2xl">
+      <p className="py-6 text-gray-600 font-playfair text-md sm:text-xl md:text-xl lg:text-2xl">
       Our restaurant is a family-run restaurant with a love for traditional British cooking. Our chefs use only the freshest, locally-sourced ingredients to create dishes that are both familiar and exciting!
       </p>
       <button className="btn bg-textcolor text-white" onClick={()=>navigate("/about")}>Learn more</button>
