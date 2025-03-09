@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom'
 export default function Navbar() {
     return (
-      <div className="fixed navbar px-8 bg-white/80 shadow-md text-black h-[80px] sm:h-[80px] md:h-[80px] lg:h-[90px] border-b-2">
+      <div className="fixed z-10 navbar px-8 bg-white/80 shadow-md text-black h-[80px] sm:h-[80px] md:h-[80px] lg:h-[90px] border-b-2">
         <div className="navbar-start">
           <div className="dropdown">
             <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -26,6 +26,7 @@ export default function Navbar() {
             >
               <li>
               <Link
+              to="/"
               onClick={() => document.activeElement.blur()}
               >Home</Link>
             </li>
@@ -44,6 +45,7 @@ export default function Navbar() {
             
             <li>
               <Link
+              to="/about"
               onClick={() => document.activeElement.blur()}
               >About us</Link>
             </li>
@@ -55,44 +57,46 @@ export default function Navbar() {
 
             </ul>
           </div>
-          <a className="text-textcolor font-semibold text-xl sm:text-2xl md:text-3xl lg:text-4xl">Perth Retreat</a>
+          <a className="text-textcolor font-bold font-merriweather text-lg sm:text-2xl md:text-3xl lg:text-4xl">PERTH RETREAT</a>
         </div>
         <div className="navbar-center hidden lg:flex ">
-          <ul className="menu menu-horizontal px-1 lg:gap-x-8">
+          <ul className="menu-horizontal px-1 lg:gap-x-8">
           <li>
               <Link
-              className="lg:text-xl"
+              to="/"
+              className="lg:text-xl font-semibold hover:text-textcolor hover:underline"
               >Home</Link>
             </li>          
             
             <li>
               <Link
-              className="lg:text-xl"
+              className="lg:text-xl font-semibold hover:text-textcolor hover:underline"
               >Timing</Link>
             </li>          
             
             <li>
               <Link
-              className="lg:text-xl"
+              className="lg:text-xl font-semibold hover:text-textcolor hover:underline"
               >Menu</Link>
             </li>          
             
             <li>
               <Link
-              className="lg:text-xl"
+              to="/about"
+              className="lg:text-xl font-semibold hover:text-textcolor hover:underline"
               >About us</Link>
             </li>          
 
             <li>
               <Link
-              className="lg:text-xl"
+              className="lg:text-xl font-semibold hover:text-textcolor hover:underline"
               >Contact us</Link>
             </li>          
           
           </ul>
         </div>
         <div className="navbar-end">
-          <a className="btn text-black border border-black">Button</a>
+          <h2 className="text-textcolor font-bold text-sm sm:text-lg md:text-xl lg:text-3xl">0141 611 3159</h2>
         </div>
       </div>
     );

@@ -1,6 +1,6 @@
 export default function Aboutus(){
-    return(
-        <div >
+    return( 
+        <div className="mt-14">
         <section className=" py-16 px-6 text-center shodow-md border-2 ">
         <div className="max-w-3xl mx-auto">
           <h2 className="text-4xl font-merriweather textcolor mb-4">Our Story</h2>

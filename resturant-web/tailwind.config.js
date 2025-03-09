@@ -4,7 +4,8 @@ export default {
   theme: {
     extend: {
       colors: {
-        textcolor: "#443627",
+        // textcolor: "#443627",
+        textcolor: "#6F4E37",
       },
       fontFamily: {
         playfair: ["Playfair Display", "serif"],

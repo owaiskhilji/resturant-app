@@ -8,15 +8,10 @@ import App from './App.jsx'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <BrowserRouter>
+<BrowserRouter>
     <Navbar/>
-    <br/>
-    <br/>
-    <br/>
-    <br/>
     <App />
-  
   <Footer/>
-    </BrowserRouter>
+</BrowserRouter>
   </StrictMode>,
 )
