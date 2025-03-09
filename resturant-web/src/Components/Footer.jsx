@@ -92,7 +92,7 @@ export default function Footer() {
         </div>
   {/* <hr className="w-96 text-white mt-4"/> */}
         {/* Copyright */}
-        <p className="text-center text-sm mt-6 border-t-2 pt-6">
+        <p className="text-center text-sm mt-6  pt-6">
           Copyright © {new Date().getFullYear()} - All rights reserved
         </p>
       </footer>

@@ -1,13 +1,16 @@
+import { useEffect , useRef} from "react";
 import './App.css'
-import { BrowserRouter,Routes,Route } from "react-router-dom";
-import Aboutus from "./Pages/Aboutus"
+import {Routes,Route,useLocation } from "react-router-dom";
 import Home from "./Pages/Home"
+import Prices from "./Pages/Prices"
+import Menu from "./Pages/Menu"
+import Aboutus from "./Pages/Aboutus"
+import OurServices from "./Pages/OurServices"
+import Notfound from "./Pages/Notfound"
+import ReservationPopup from "./Components/ReservationPopup"
+import Navbar from "./Components/Navbar"
+import Footer from "./Components/Footer"
 
-
-
-
-import { useEffect } from "react";
-import { useLocation } from "react-router-dom";
 
 function ScrollToTop() {
   const { pathname } = useLocation();
@@ -19,16 +22,31 @@ function ScrollToTop() {
   return null;
 }
 
+
+
+
 function App() {
-  
+  const contactRef = useRef(null);  
+  const scrollToContact = () => {
+    if (contactRef.current) {
+      contactRef.current.scrollIntoView({ behavior: "smooth" });
+    }
+  };
   return (
 <div className="overflow-x-hidden">
+<Navbar onContactClick={scrollToContact} />
     <ScrollToTop/>
+    <ReservationPopup/>
 <Routes>
-<Route path="/" element={<Home />} />
-<Route path="/about" element={< Aboutus />} />
+<Route path="/" element={<Home contactRef={contactRef}/>} />
+<Route path="/about" element={< Aboutus/>} />
+<Route path="/prices" element={< Prices/>} />
+<Route path="/menu" element={< Menu/>} />
+<Route path="/ourservices" element={< OurServices/>} />
+<Route path="/*" element={< Notfound/>} />
 </Routes>
 
+<Footer/>
 </div>
   )
 }

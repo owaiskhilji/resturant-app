@@ -1,6 +1,10 @@
 import { Link } from 'react-router-dom'
-export default function Navbar() {
-    return (
+
+
+
+export default function Navbar({ onContactClick }) {
+  
+  return (
       <div className="fixed z-10 navbar px-8 bg-white/80 shadow-md text-black h-[80px] sm:h-[80px] md:h-[80px] lg:h-[90px] border-b-2">
         <div className="navbar-start">
           <div className="dropdown">
@@ -22,36 +26,41 @@ export default function Navbar() {
             </div>
             <ul
               tabIndex={0}
-              className="menu menu-sm sm:menu-md md:menu-lg dropdown-content bg-white/90 text-black rounded-box z-1 mt-3 w-52 p-2 shadow"
+              className="menu menu-sm sm:menu-md md:menu-lg dropdown-content text-black rounded-box z-1 mt-3 w-52 p-2 shadow"
             >
-              <li>
+              <li className="hover:text-textcolor hover:underline">
               <Link
               to="/"
               onClick={() => document.activeElement.blur()}
               >Home</Link>
             </li>
             
-            <li>
+            <li className="hover:text-textcolor hover:underline">
               <Link
+              to="/prices"
               onClick={() => document.activeElement.blur()}
               >Prices</Link>
             </li>
             
-            <li>
+            <li className="hover:text-textcolor hover:underline">
               <Link
+              to="/menu"
               onClick={() => document.activeElement.blur()}
               >Menu</Link>
             </li>
             
-            <li>
+            <li className="hover:text-textcolor hover:underline">
               <Link
               to="/about"
               onClick={() => document.activeElement.blur()}
               >About us</Link>
             </li>
-            <li>
+            <li className="hover:text-textcolor hover:underline">
               <Link
-              onClick={() => document.activeElement.blur()}
+              to="#contact"
+              onClick={() =>{ document.activeElement.blur()
+                onContactClick
+              }}
               >Contact us</Link>
             </li>
 
@@ -61,35 +70,38 @@ export default function Navbar() {
         </div>
         <div className="navbar-center hidden lg:flex ">
           <ul className="menu-horizontal px-1 lg:gap-x-8">
-          <li>
+          <li className="lg:text-xl font-semibold hover:text-textcolor hover:underline"
+              >
               <Link
               to="/"
-              className="lg:text-xl font-semibold hover:text-textcolor hover:underline"
               >Home</Link>
             </li>          
             
-            <li>
+            <li className="lg:text-xl font-semibold hover:text-textcolor hover:underline"
+              >
               <Link
-              className="lg:text-xl font-semibold hover:text-textcolor hover:underline"
+              to="/prices"
               >Prices</Link>
             </li>          
             
-            <li>
+            <li className="lg:text-xl font-semibold hover:text-textcolor hover:underline"
+              >
               <Link
-              className="lg:text-xl font-semibold hover:text-textcolor hover:underline"
+              to="/menu"
               >Menu</Link>
             </li>          
             
-            <li>
+            <li className="lg:text-xl font-semibold hover:text-textcolor hover:underline"
+              >
               <Link
               to="/about"
-              className="lg:text-xl font-semibold hover:text-textcolor hover:underline"
               >About us</Link>
             </li>          
 
-            <li>
+            <li  className="lg:text-xl font-semibold hover:text-textcolor hover:underline"
+              >
               <Link
-              className="lg:text-xl font-semibold hover:text-textcolor hover:underline"
+              onClick={onContactClick}
               >Contact us</Link>
             </li>          
           

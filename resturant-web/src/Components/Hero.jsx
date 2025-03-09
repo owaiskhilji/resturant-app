@@ -53,15 +53,15 @@ export default function Hero() {
         {/* Overlay with Text */}
         <div className="absolute inset-0 bg-black bg-opacity-50 flex justify-center items-center text-white px-6 text-center">
           <div>
-            <h1 className="text-5xl md:text-6xl font-bold mb-4">
+            <h1 className="text-3xl sm:text-4xl lg:text-6xl md:text-6xl font-bold mb-4">
               Welcome to Our Restaurant
             </h1>
-            <p className="text-lg md:text-xl max-w-2xl mx-auto">
+            <p className="text-md sm:text-lg md:text-xl lg:text-xl max-w-2xl mx-auto">
               Indulge in the finest British dishes, crafted with fresh, locally
               sourced ingredients and a modern touch. Enjoy traditional flavors
               with a contemporary twist!
             </p>
-            <button className="mt-6 px-6 py-3 bg-textcolor text-white text-lg font-semibold rounded-lg shadow-md transition duration-300">
+            <button className="mt-6 px-3 py-2 sm:px-3 sm:py-2 md:px-6 md:py-3 lg:px-6 lg:py-3 bg-textcolor text-white text-md sm:text-md md:text-lg lg:text-lg font-semibold rounded-lg shadow-md transition duration-300">
               Explore Our Menu
             </button>
           </div>
@@ -70,13 +70,13 @@ export default function Hero() {
         {/* Navigation Buttons */}
         <button
           onClick={prevSlide}
-          className="absolute left-4 top-1/2 transform -translate-y-1/2 bg-gray-800 text-white p-3 rounded-full hover:bg-gray-600 transition"
+          className="absolute left-4 top-1/2 transform -translate-y-1/2 text-white p-3 rounded-full hover:bg-gray-600 transition"
         >
           ❮
         </button>
         <button
           onClick={nextSlide}
-          className="absolute right-4 top-1/2 transform -translate-y-1/2 bg-gray-800 text-white p-3 rounded-full hover:bg-gray-600 transition"
+          className="absolute right-4 top-1/2 transform -translate-y-1/2 text-white p-3 rounded-full hover:bg-gray-600 transition"
         >
           ❯
         </button>

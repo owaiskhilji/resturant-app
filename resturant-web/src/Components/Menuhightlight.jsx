@@ -32,6 +32,10 @@ const menuItems = [
 ];
 
 export default function MenuHighlight() {
+ 
+ 
+ 
+ 
   useEffect(() => {
     AOS.init({ duration: 1000, 
       easing: "ease-in-out",
@@ -41,7 +45,7 @@ export default function MenuHighlight() {
 
   return (
     <div className="container mx-auto p-6">
-      <h2 className="text-center font-merriweather text-3xl font-bold text-gray-800 mb-8">
+      <h2 className="text-center text-4xl font-semibold font-merriweather text-gray-800 uppercase mb-8">
         Menu Highlights
       </h2>
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
