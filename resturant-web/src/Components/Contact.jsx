@@ -5,9 +5,9 @@ const Contact = () => {
   
   return (
 <div>
-<div id="contact" className="font-[sans-serif] py-12 px-4 sm:px-6 lg:px-8 bg-white">
+<div  className="font-[sans-serif] py-12 px-4 sm:px-6 lg:px-8 bg-white">
          <div className="flex justify-center mb-16">
-          <h2 className="text-4xl font-semibold font-merriweather text-gray-800  uppercase">VISIT US</h2>
+          <h2 className="text-lg sm:text-xl md:text-3xl lg:text-4xl font-semibold font-merriweather text-gray-800  uppercase">VISIT US</h2>
           </div>
       <div className="max-w-6xl mx-auto flex flex-col md:flex-row  lg:flex-row  gap-20">
         

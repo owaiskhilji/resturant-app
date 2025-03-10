@@ -44,7 +44,7 @@ export default function MenuHighlight() {
   }, []);
 
   return (
-    <div className="container mx-auto p-6">
+    <div className="container mx-auto p-6 mt-4">
       <h2 className="text-center text-4xl font-semibold font-merriweather text-gray-800 uppercase mb-8">
         Menu Highlights
       </h2>

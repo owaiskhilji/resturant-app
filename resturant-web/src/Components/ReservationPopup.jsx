@@ -13,21 +13,21 @@ export default function ReservationPopup() {
 
   const handleClose = () => {
     setShowPopup(false);
-    localStorage.setItem("popupClosed", "true"); // Mark popup as closed
+    localStorage.setItem("popupClosed", "true"); 
   };
 
   return (
     <>
       {showPopup && (
-        <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50">
+        <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 z-10">
           <div className="bg-white p-6 rounded-lg shadow-lg text-center max-w-sm">
             <h2 className="text-2xl font-bold font-merriweather">Book a Table</h2>
             <p className="mt-2 font-playfair text-gray-600">
-              To make a reservation, please call us on <strong>0141 611 3159</strong> or book online through our website.
+              To make a reservation, please call us on <strong className>0141 611 3159</strong> or book online through our website.
             </p>
             <button
               onClick={handleClose}
-              className="mt-4 px-4 py-2 bg-textcolor text-white rounded"
+              className="w-full mt-4 px-4 py-2 bg-textcolor text-white rounded"
             >
               Close
             </button>

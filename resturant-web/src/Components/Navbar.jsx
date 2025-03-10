@@ -3,7 +3,21 @@ import { Link } from 'react-router-dom'
 
 
 export default function Navbar({ onContactClick }) {
+
+    // const navigate = useNavigate()
   
+  
+function openModal(){
+  const modal = document.getElementById('my_modal_3')
+  if (modal) {
+    modal.showModal(); 
+  } else {
+    console.error("Modal not found!");
+  }
+}
+
+  
+
   return (
       <div className="fixed z-10 navbar px-8 bg-white/80 shadow-md text-black h-[80px] sm:h-[80px] md:h-[80px] lg:h-[90px] border-b-2">
         <div className="navbar-start">
@@ -26,13 +40,21 @@ export default function Navbar({ onContactClick }) {
             </div>
             <ul
               tabIndex={0}
-              className="menu menu-sm sm:menu-md md:menu-lg dropdown-content text-black rounded-box z-1 mt-3 w-52 p-2 shadow"
+              className="menu menu-sm sm:menu-md md:menu-lg dropdown-content text-black bg-white rounded-box z-1 mt-3 w-52 p-2 shadow"
             >
               <li className="hover:text-textcolor hover:underline">
               <Link
               to="/"
               onClick={() => document.activeElement.blur()}
               >Home</Link>
+            </li>
+              <li className="hover:text-textcolor hover:underline">
+              <Link
+              
+              onClick={() =>{ document.activeElement.blur()
+                openModal()
+              }}
+              >Opening Hours</Link>
             </li>
             
             <li className="hover:text-textcolor hover:underline">
@@ -57,8 +79,8 @@ export default function Navbar({ onContactClick }) {
             </li>
             <li className="hover:text-textcolor hover:underline">
               <Link
-              to="#contact"
               onClick={() =>{ document.activeElement.blur()
+                navigate("#contact")
                 onContactClick
               }}
               >Contact us</Link>
@@ -75,6 +97,13 @@ export default function Navbar({ onContactClick }) {
               <Link
               to="/"
               >Home</Link>
+            </li>          
+            
+          <li className="lg:text-xl font-semibold hover:text-textcolor hover:underline"
+              >
+              <Link
+              onClick={openModal}
+              >Opening Hours</Link>
             </li>          
             
             <li className="lg:text-xl font-semibold hover:text-textcolor hover:underline"
@@ -101,7 +130,7 @@ export default function Navbar({ onContactClick }) {
             <li  className="lg:text-xl font-semibold hover:text-textcolor hover:underline"
               >
               <Link
-              onClick={onContactClick}
+              onClick={()=>{onContactClick}}
               >Contact us</Link>
             </li>          
           

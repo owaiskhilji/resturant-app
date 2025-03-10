@@ -8,7 +8,7 @@ export default function Ourstory(){
 
   return(
         <div>
-            <div className="hero min-h-screen">
+            <div className="hero min-h-screen mt-4">
   <div className="hero-content flex-col md:flex-row-reverse lg:flex-row-reverse gap-10">
     
     <div>

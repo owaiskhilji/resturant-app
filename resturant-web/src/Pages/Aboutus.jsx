@@ -41,7 +41,7 @@ const aboutUsData = [
 export default function Aboutus(){
     return( 
    
-      <div className="mt-28 px-4 md:px-6 lg:px-8 xl:px-12">
+      <div className="mt-28 px-4 md:px-6 lg:px-8 xl:px-12 pb-6">
       {aboutUsData.map((service, index) => (
         <section
           key={index}

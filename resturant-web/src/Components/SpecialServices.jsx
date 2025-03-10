@@ -14,7 +14,7 @@ export default function SpecialServices() {
         data-aos="fade-up"
       >
         <div className="mb-6">
-          <h2 className="text-4xl font-bold text-black font-merriweather mb-3">
+          <h2 className="text-lg sm:text-xl md:text-3xl lg:text-4xl font-bold text-black font-merriweather mb-3">
             Special Services
           </h2>
           <p className="text-md sm:text-xl md:text-xl lg:text-2xl text-gray-600 font-playfair">
@@ -65,7 +65,7 @@ export default function SpecialServices() {
               Happy Hour Deals
             </h3>
             <p className="text-md sm:text-xl md:text-xl lg:text-2xl text-gray-600 font-playfair">
-              Exclusive discounts on drinks and meals.<a className="text-blue-600 underline" href="/ourservices">learn more...</a>
+              Exclusive discounts on drinks and meals.<a className="text-blue-600 " href="/ourservices"> learn more...</a>
             </p>
           </div>
         </div>

@@ -6,6 +6,7 @@ import Prices from "./Pages/Prices"
 import Menu from "./Pages/Menu"
 import Aboutus from "./Pages/Aboutus"
 import OurServices from "./Pages/OurServices"
+import OpeningHours from "./Components/OpeningHours"
 import Notfound from "./Pages/Notfound"
 import ReservationPopup from "./Components/ReservationPopup"
 import Navbar from "./Components/Navbar"
@@ -35,6 +36,7 @@ function App() {
   return (
 <div className="overflow-x-hidden">
 <Navbar onContactClick={scrollToContact} />
+<OpeningHours/>
     <ScrollToTop/>
     <ReservationPopup/>
 <Routes>
@@ -43,6 +45,7 @@ function App() {
 <Route path="/prices" element={< Prices/>} />
 <Route path="/menu" element={< Menu/>} />
 <Route path="/ourservices" element={< OurServices/>} />
+{/* <Route path="/opening-hours" element={<OpeningHours/>} /> */}
 <Route path="/*" element={< Notfound/>} />
 </Routes>
 

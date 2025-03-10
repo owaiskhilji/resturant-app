@@ -10,8 +10,8 @@ export default function SpecialsEvents() {
 
 
     return (
-      <div className="text-center py-10 ">
-        <h2 className="text-4xl font-bold mb-4 font-merriweather"> Join Us for Special Events</h2>
+      <div className="text-center py-10 mt-4">
+        <h2 className="text-lg sm:text-xl md:text-3xl lg:text-4xl font-bold mb-4 font-merriweather"> Join Us for Special Events</h2>
         <p className="text-md sm:text-xl md:text-xl lg:text-2xl text-gray-600 mb-8 font-playfair">Enjoy great food & entertainment every week!</p>
   
         {/* 3 Column Layout */}
